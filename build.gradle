@@ -47,3 +47,8 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+
+// bootBuildImage를 통한 도커 이미지 배포는 필수적으로 이미지 명을 명시해야 합니다.
+bootBuildImage {
+    imageName = 'nativetest'
+}
